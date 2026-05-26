@@ -20,20 +20,84 @@ export default function DesignDeck() {
         {/* 01 Brand Essence */}
         <section>
           <SectionLabel>01 — Brand Essence</SectionLabel>
-          <div className="mt-8 grid grid-cols-2 gap-6">
-            {/* Logo showcase */}
-            <div className="bg-white rounded-2xl border border-[#EDD9B8]/60 p-12 flex flex-col items-center justify-center gap-8">
-              <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase self-start">Logo — Light background</p>
+
+          {/* Lockups */}
+          <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase mt-8 mb-4">Lockups</p>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Square · Brown</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="Taïga Pura Vida Coffee" className="w-52 h-52 object-contain" />
+              <img src="/logo-square-brown.png" alt="Square brown lockup" className="w-full object-contain" />
             </div>
-            <div className="bg-[#2B1608] rounded-2xl p-12 flex flex-col items-center justify-center gap-8">
-              <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase self-start">Logo — Dark background</p>
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Square · Amber</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="Taïga Pura Vida Coffee" className="w-52 h-52 object-contain brightness-0 invert" />
+              <img src="/logo-square-amber.png" alt="Square amber lockup" className="w-full object-contain" />
+            </div>
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Square · Inverted</span>
+              <div className="bg-[#2B1608] rounded-xl p-4 flex items-center justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-square-brown.png" alt="Square inverted lockup" className="w-full object-contain brightness-0 invert" />
+              </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-6 mt-6">
+
+          {/* Horizontal */}
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Horizontal lockup</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-horizontal.png" alt="Horizontal lockup" className="w-full object-contain" />
+            </div>
+            <div className="bg-[#2B1608] rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#EDD9B8]/40 text-[10px] tracking-[0.25em] uppercase">Horizontal · Dark bg</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-horizontal.png" alt="Horizontal lockup dark" className="w-full object-contain brightness-0 invert" />
+            </div>
+          </div>
+
+          {/* Wordmark */}
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Wordmark</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-wordmark.png" alt="Wordmark" className="w-full object-contain" />
+            </div>
+            <div className="bg-[#2B1608] rounded-2xl p-8 flex flex-col gap-3">
+              <span className="text-[#EDD9B8]/40 text-[10px] tracking-[0.25em] uppercase">Wordmark · Dark bg</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-wordmark.png" alt="Wordmark dark" className="w-full object-contain brightness-0 invert" />
+            </div>
+          </div>
+
+          {/* Jaguar marks */}
+          <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase mt-8 mb-4">Jaguar mark — standalone</p>
+          <div className="grid grid-cols-4 gap-4">
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-6 flex flex-col items-center gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Black</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-mark-black.png" alt="Jaguar mark black" className="w-32 h-24 object-contain" />
+            </div>
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-6 flex flex-col items-center gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Amber</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-mark-amber.png" alt="Jaguar mark amber" className="w-32 h-24 object-contain" />
+            </div>
+            <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-6 flex flex-col items-center gap-3">
+              <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Cream</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-mark-cream.png" alt="Jaguar mark cream" className="w-32 h-24 object-contain" />
+            </div>
+            <div className="bg-[#2B1608] rounded-2xl p-6 flex flex-col items-center gap-3">
+              <span className="text-[#EDD9B8]/40 text-[10px] tracking-[0.25em] uppercase">White</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-mark-black.png" alt="Jaguar mark white" className="w-32 h-24 object-contain brightness-0 invert" />
+            </div>
+          </div>
+
+          {/* Brand pillars */}
+          <div className="grid grid-cols-3 gap-6 mt-8">
             <EssenceCard title="Wild" body="The jaguar. Untamed, proud, rooted in the forest. The brand carries nature's quiet confidence." />
             <EssenceCard title="Warm" body="Cocoa tones, amber light, the smell of fresh roast. Every touchpoint should feel like a warm welcome." />
             <EssenceCard title="Pura Vida" body="Costa Rican for 'pure life.' Unhurried, joyful, authentic. Not just coffee — a way of being." />

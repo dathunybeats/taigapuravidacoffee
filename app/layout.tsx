@@ -13,19 +13,19 @@ export const metadata: Metadata = {
   title: "Taïga Pura Vida Coffee",
   description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo-square-brown.png",
+    apple: "/logo-square-brown.png",
   },
   openGraph: {
     title: "Taïga Pura Vida Coffee",
     description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
-    images: [{ url: "/logo.png", width: 1080, height: 1080, alt: "Taïga Pura Vida Coffee" }],
+    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taïga Pura Vida Coffee" }],
   },
   twitter: {
     card: "summary",
     title: "Taïga Pura Vida Coffee",
     description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
-    images: ["/logo.png"],
+    images: ["/logo-square-brown.png"],
   },
 };
 
