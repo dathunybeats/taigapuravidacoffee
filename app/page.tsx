@@ -177,13 +177,9 @@ export default function DesignDeck() {
             <div className="bg-[#2B1608] rounded-2xl p-8">
               <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-6">Navigation</p>
               <nav className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo.png" alt="Taïga" className="h-10 w-10 object-contain brightness-0 invert" />
-                  <div>
-                    <p className="text-[#EDD9B8] text-sm font-medium tracking-widest uppercase">Taïga</p>
-                    <p className="text-[#EDD9B8]/40 text-[10px] tracking-[0.25em] uppercase">Pura Vida Coffee</p>
-                  </div>
+                  <img src="/logo-horizontal.png" alt="Taïga" className="h-10 object-contain brightness-0 invert" />
                 </div>
                 <div className="flex gap-8">
                   {["Menu", "Story", "Brew", "Find us"].map((item) => (
@@ -225,52 +221,120 @@ export default function DesignDeck() {
         {/* 05 Page Layouts */}
         <section>
           <SectionLabel>05 — Page Layouts</SectionLabel>
-          <div className="mt-8 space-y-6">
+          <div className="mt-8 space-y-4">
 
-            {/* Hero mockup */}
+            {/* NAVBAR — wordmark only */}
             <div>
-              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-4">Hero Section</p>
-              <div
-                className="h-80 rounded-2xl relative flex items-end p-12 overflow-hidden bg-[#2B1608]"
-              >
-                <div className="relative z-10 max-w-lg">
-                  <p className="text-[#C4622D] text-xs tracking-[0.35em] uppercase mb-4">Taïga Pura Vida Coffee</p>
-                  <h2 className="text-[#EDD9B8] leading-tight mb-6" style={{ fontSize: 48 }}>
+              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Navbar — wordmark</p>
+              <div className="bg-[#2B1608] rounded-2xl px-10 py-5 flex items-center justify-between">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-horizontal.png" alt="Taïga" className="h-10 object-contain brightness-0 invert" />
+                <div className="flex gap-8">
+                  {["Menu", "Story", "Brew", "Find us"].map((item) => (
+                    <span key={item} className="text-[#2B1608]/60 text-sm cursor-pointer hover:text-[#2B1608] transition-colors" style={{ fontFamily: "var(--font-navigation)", fontWeight: 700 }}>
+                      {item}
+                    </span>
+                  ))}
+                </div>
+                <button className="bg-[#2B1608] text-[#EDD9B8] px-6 py-2.5 rounded-full text-xs" style={{ fontFamily: "var(--font-button)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px" }}>
+                  Order
+                </button>
+              </div>
+            </div>
+
+            {/* HERO — black silhouette as oversized watermark */}
+            <div>
+              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Hero — black mark as watermark</p>
+              <div className="bg-[#2B1608] rounded-2xl relative overflow-hidden" style={{ height: 380 }}>
+                {/* Giant jaguar watermark bleeding off the right */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-mark-black.png" alt="" className="absolute -right-16 -bottom-8 brightness-0 invert opacity-[0.07]" style={{ height: 420 }} />
+                <div className="relative z-10 flex flex-col justify-end h-full p-12">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/logo-wordmark.png" alt="Taïga" className="h-6 object-contain object-left brightness-0 invert mb-8 opacity-50" style={{ width: 140 }} />
+                  <h2 className="text-[#EDD9B8] leading-none mb-6" style={{ fontSize: 56 }}>
                     Where the wild<br />meets the cup.
                   </h2>
                   <div className="flex gap-4">
-                    <div className="bg-[#C4622D] text-white px-7 py-3 rounded-full text-xs tracking-[0.2em]" style={{ fontFamily: "var(--font-button)", fontWeight: 700, textTransform: "uppercase" }}>
+                    <div className="bg-[#C4622D] text-white px-7 py-3 rounded-full" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: 13, textTransform: "uppercase", letterSpacing: "2px" }}>
                       Explore menu
                     </div>
-                    <div className="border border-[#EDD9B8]/40 text-[#EDD9B8] px-7 py-3 rounded-full text-xs tracking-[0.2em]" style={{ fontFamily: "var(--font-button)", fontWeight: 700, textTransform: "uppercase" }}>
+                    <div className="border border-[#EDD9B8]/30 text-[#EDD9B8] px-7 py-3 rounded-full" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: 13, textTransform: "uppercase", letterSpacing: "2px" }}>
                       Our story
                     </div>
                   </div>
                 </div>
-                <div className="absolute right-12 top-1/2 -translate-y-1/2 opacity-30">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo.png" alt="" className="w-56 h-56 object-contain brightness-0 invert" />
-                </div>
               </div>
             </div>
 
-            {/* Feature strip */}
+            {/* VALUES — amber mark as card icon */}
             <div>
-              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-4">Feature Strip</p>
+              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Values strip — amber mark as icon</p>
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { icon: "◈", title: "Direct Trade", body: "We work directly with farmers in Costa Rica, paying above fair-trade prices." },
-                  { icon: "◉", title: "Small Batch", body: "Roasted fresh to order so every bag you receive is at peak flavour." },
-                  { icon: "◎", title: "Come As You Are", body: "A space for everyone. Great coffee doesn't need a dress code." },
+                  { title: "Direct Trade", body: "We work directly with farmers in Costa Rica, paying above fair-trade prices." },
+                  { title: "Small Batch", body: "Roasted fresh to order so every bag you receive is at peak flavour." },
+                  { title: "Come As You Are", body: "A space for everyone. Great coffee doesn't need a dress code." },
                 ].map((f) => (
                   <div key={f.title} className="bg-white border border-[#EDD9B8]/60 rounded-2xl p-8">
-                    <span className="text-[#C4622D] text-2xl">{f.icon}</span>
-                    <h3 className="text-[#2B1608] font-medium mt-4 mb-2 tracking-tight">{f.title}</h3>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/logo-mark-amber.png" alt="" className="h-10 w-16 object-contain object-left mb-5" />
+                    <h3 className="text-[#2B1608] mb-2">{f.title}</h3>
                     <p className="text-[#5C2D0E]/60 text-sm leading-6 font-light">{f.body}</p>
                   </div>
                 ))}
               </div>
             </div>
+
+            {/* ABOUT STRIP — horizontal lockup centered */}
+            <div>
+              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">About strip — horizontal lockup</p>
+              <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-12 flex flex-col items-center gap-6 text-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-horizontal.png" alt="Taïga Pura Vida Coffee" className="h-20 object-contain" />
+                <p className="text-[#5C2D0E]/70 text-base leading-7 max-w-xl font-light">
+                  Born in the wild, brewed with intention. Every cup is a small act of pura vida — pure life — shared between the land, the farmer, and you.
+                </p>
+              </div>
+            </div>
+
+            {/* DARK CTA — cream mark as large decorative element */}
+            <div>
+              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">CTA section — cream mark on dark</p>
+              <div className="bg-[#2B1608] rounded-2xl p-12 relative overflow-hidden flex items-center justify-between">
+                {/* Cream jaguar, large, left-anchored, partially cropped */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-mark-cream.png" alt="" className="absolute -left-10 top-1/2 -translate-y-1/2 opacity-20" style={{ height: 260 }} />
+                <div className="relative z-10">
+                  <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase mb-3">Ready to visit?</p>
+                  <h2 className="text-[#EDD9B8]" style={{ fontSize: 36 }}>Come find us.</h2>
+                </div>
+                <div className="relative z-10 flex flex-col gap-3 items-end">
+                  <button className="bg-[#EDD9B8] text-[#2B1608] px-8 py-3.5 rounded-full" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: 14, textTransform: "uppercase", letterSpacing: "2px" }}>
+                    Get directions
+                  </button>
+                  <p className="text-[#EDD9B8]/40 text-xs tracking-wider">123 Jungle St, San José, CR</p>
+                </div>
+              </div>
+            </div>
+
+            {/* FOOTER — square amber lockup */}
+            <div>
+              <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Footer — square lockup</p>
+              <div className="bg-[#2B1608] rounded-2xl p-10 flex items-center justify-between">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-square-brown.png" alt="Taïga" className="h-20 w-20 object-contain brightness-0 invert opacity-80" />
+                <div className="flex gap-10">
+                  {["Menu", "Story", "Brew", "Find us", "Instagram"].map((item) => (
+                    <span key={item} className="text-[#EDD9B8]/50 text-xs cursor-pointer hover:text-[#EDD9B8] transition-colors" style={{ fontFamily: "var(--font-navigation)", fontWeight: 700, textTransform: "uppercase" }}>
+                      {item}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-[#EDD9B8]/25 text-xs">© 2026 Taïga</p>
+              </div>
+            </div>
+
           </div>
         </section>
 
