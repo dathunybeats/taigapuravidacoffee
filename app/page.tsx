@@ -50,11 +50,6 @@ export default function DesignDeck() {
             <ColorSwatch bg="#EDD9B8" name="Cream" hex="#EDD9B8" role="Highlight" dark />
             <ColorSwatch bg="#FAF6F0" name="Linen" hex="#FAF6F0" role="Background" dark border />
           </div>
-          <div className="mt-6 grid grid-cols-3 gap-6">
-            <GradientSwatch from="#C4622D" to="#E07832" name="Ember Gradient" use="CTAs, highlights, hover states" />
-            <GradientSwatch from="#2B1608" to="#5C2D0E" name="Roast Gradient" use="Hero overlays, section backgrounds" />
-            <GradientSwatch from="#FAF6F0" to="#EDD9B8" name="Cream Gradient" use="Cards, light section backgrounds" />
-          </div>
         </section>
 
         {/* 03 Typography */}
@@ -102,7 +97,7 @@ export default function DesignDeck() {
                 <button className="bg-[#2B1608] text-[#EDD9B8] px-8 py-3.5 rounded-full hover:bg-[#5C2D0E] transition-colors" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: "var(--font-button-size)", textTransform: "uppercase", letterSpacing: "var(--font-button-letter-spacing)" }}>
                   Order Now
                 </button>
-                <button className="bg-gradient-to-r from-[#C4622D] to-[#E07832] text-white px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: "var(--font-button-size)", textTransform: "uppercase", letterSpacing: "var(--font-button-letter-spacing)" }}>
+                <button className="bg-[#C4622D] text-white px-8 py-3.5 rounded-full hover:bg-[#5C2D0E] transition-colors" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: "var(--font-button-size)", textTransform: "uppercase", letterSpacing: "var(--font-button-letter-spacing)" }}>
                   Explore Menu
                 </button>
                 <button className="border border-[#2B1608] text-[#2B1608] px-8 py-3.5 rounded-full hover:bg-[#2B1608] hover:text-[#EDD9B8] transition-colors" style={{ fontFamily: "var(--font-button)", fontWeight: 700, fontSize: "var(--font-button-size)", textTransform: "uppercase", letterSpacing: "var(--font-button-letter-spacing)" }}>
@@ -127,8 +122,8 @@ export default function DesignDeck() {
                   </div>
                 </div>
                 <div className="flex gap-8">
-                  {["Menu", "Story", "Brew", "Find Us"].map((item) => (
-                    <span key={item} className="text-[#EDD9B8]/70 cursor-pointer hover:text-[#EDD9B8] transition-colors" style={{ fontFamily: "var(--font-navigation)", fontWeight: "var(--font-navigation-weight)" as never, fontSize: "var(--font-navigation-size)", textTransform: "uppercase", letterSpacing: "var(--font-navigation-letter-spacing)" }}>
+                  {["Menu", "Story", "Brew", "Find us"].map((item) => (
+                    <span key={item} className="text-[#EDD9B8]/70 cursor-pointer hover:text-[#EDD9B8] transition-colors" style={{ fontFamily: "var(--font-navigation)", fontWeight: "var(--font-navigation-weight)" as never, fontSize: "var(--font-navigation-size)", letterSpacing: "var(--font-navigation-letter-spacing)" }}>
                       {item}
                     </span>
                   ))}
@@ -172,21 +167,19 @@ export default function DesignDeck() {
             <div>
               <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-4">Hero Section</p>
               <div
-                className="h-80 rounded-2xl relative flex items-end p-12 overflow-hidden"
-                style={{ background: "linear-gradient(135deg, #1A0D04 0%, #2B1608 55%, #5C2D0E 100%)" }}
+                className="h-80 rounded-2xl relative flex items-end p-12 overflow-hidden bg-[#2B1608]"
               >
-                <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 72% 38%, #C4622D44 0%, transparent 55%)" }} />
                 <div className="relative z-10 max-w-lg">
                   <p className="text-[#C4622D] text-xs tracking-[0.35em] uppercase mb-4">Taïga Pura Vida Coffee</p>
                   <h2 className="text-[#EDD9B8] leading-tight mb-6" style={{ fontSize: 48 }}>
                     Where the wild<br />meets the cup.
                   </h2>
                   <div className="flex gap-4">
-                    <div className="bg-gradient-to-r from-[#C4622D] to-[#E07832] text-white px-7 py-3 rounded-full text-xs tracking-[0.2em] uppercase">
-                      Explore Menu
+                    <div className="bg-[#C4622D] text-white px-7 py-3 rounded-full text-xs tracking-[0.2em]" style={{ fontFamily: "var(--font-button)", fontWeight: 700, textTransform: "uppercase" }}>
+                      Explore menu
                     </div>
-                    <div className="border border-[#EDD9B8]/30 text-[#EDD9B8] px-7 py-3 rounded-full text-xs tracking-[0.2em] uppercase">
-                      Our Story
+                    <div className="border border-[#EDD9B8]/40 text-[#EDD9B8] px-7 py-3 rounded-full text-xs tracking-[0.2em]" style={{ fontFamily: "var(--font-button)", fontWeight: 700, textTransform: "uppercase" }}>
+                      Our story
                     </div>
                   </div>
                 </div>
@@ -306,17 +299,6 @@ function ColorSwatch({ bg, name, hex, role, dark, border }: {
   );
 }
 
-function GradientSwatch({ from, to, name, use }: { from: string; to: string; name: string; use: string }) {
-  return (
-    <div className="rounded-2xl overflow-hidden">
-      <div className="h-20" style={{ background: `linear-gradient(135deg, ${from}, ${to})` }} />
-      <div className="bg-white border-x border-b border-[#EDD9B8]/40 rounded-b-2xl p-4">
-        <p className="text-[#2B1608] text-sm font-medium">{name}</p>
-        <p className="text-[#5C2D0E]/50 text-xs mt-1 leading-5">{use}</p>
-      </div>
-    </div>
-  );
-}
 
 function MenuCard({ name, origin, price, note, dark }: {
   name: string; origin: string; price: string; note: string; dark?: boolean;
@@ -329,7 +311,7 @@ function MenuCard({ name, origin, price, note, dark }: {
       <p className={`text-xs leading-5 mb-4 font-light ${dark ? "text-[#EDD9B8]/50" : "text-[#5C2D0E]/60"}`}>{note}</p>
       <div className="flex items-center justify-between">
         <span className={`text-base font-medium ${dark ? "text-[#EDD9B8]" : "text-[#2B1608]"}`}>{price}</span>
-        <button className="bg-gradient-to-r from-[#C4622D] to-[#E07832] text-white text-xs px-4 py-1.5 rounded-full tracking-wider">
+        <button className="bg-[#C4622D] text-white text-xs px-4 py-1.5 rounded-full tracking-wider hover:bg-[#5C2D0E] transition-colors">
           Add
         </button>
       </div>
