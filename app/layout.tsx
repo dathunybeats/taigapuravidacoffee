@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   title: "Taïga Pura Vida Coffee",
   description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
   icons: {
-    icon: "/logo-square-brown.png",
-    apple: "/logo-square-brown.png",
+    icon: "/logo-mark-amber.png",
+    apple: "/logo-mark-amber.png",
   },
   openGraph: {
     title: "Taïga Pura Vida Coffee",

@@ -212,21 +212,6 @@
   }
 }
 
-/* ── Paper texture overlay — sits above all backgrounds via multiply ── */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url('/bg-texture.webp');
-  background-repeat: repeat;
-  background-size: 120px auto;
-  mix-blend-mode: multiply;
-  filter: grayscale(1);
-  opacity: 1;
-  pointer-events: none;
-  z-index: 9998;
-}
-
 /* ── Pointer cursor on interactive elements ── */
 button, [role="button"], a, select, label[for] {
   cursor: pointer;
@@ -246,7 +231,8 @@ button, [role="button"], a, select, label[for] {
   background: var(--sweep-bg, rgba(0, 0, 0, 0.2));
   clip-path: ellipse(0% 0% at 0% 100%);
   opacity: 0;
-  transition: clip-path 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0s;
+  /* Hover-out: full velocity from frame one */
+  transition: clip-path 0.55s cubic-bezier(0, 0, 0.3, 1), opacity 0s 0.55s;
   z-index: -1;
   pointer-events: none;
 }
@@ -254,6 +240,7 @@ button, [role="button"], a, select, label[for] {
 .sweep-btn:hover::before {
   clip-path: ellipse(180% 180% at -10% 110%);
   opacity: 1;
+  /* Hover-in: show instantly, sweep in with ease-out */
   transition: clip-path 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0s;
 }
 
