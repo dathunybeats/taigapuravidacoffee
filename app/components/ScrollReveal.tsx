@@ -37,7 +37,6 @@ export default function ScrollReveal({
   }, [delay]);
 
   return (
-    // @ts-expect-error — dynamic tag with ref
     <Tag ref={ref} className={`reveal ${className}`}>
       {children}
     </Tag>
