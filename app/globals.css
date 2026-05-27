@@ -248,11 +248,11 @@ button, [role="button"], a, select, label[for] {
 @keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(28px);
+    transform: translateY(52px) scale(0.98);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -261,7 +261,7 @@ button, [role="button"], a, select, label[for] {
 }
 
 .reveal.is-visible {
-  animation: reveal-up 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: reveal-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* ── Page entrance ── */

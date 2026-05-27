@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { ElementType, useEffect, useRef } from "react";
 
 interface ScrollRevealProps {
   children: React.ReactNode;
   className?: string;
-  delay?: number; // ms
-  as?: keyof JSX.IntrinsicElements;
+  delay?: number;
+  as?: ElementType;
 }
 
 export default function ScrollReveal({
@@ -29,7 +29,7 @@ export default function ScrollReveal({
           observer.unobserve(el);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px -60px 0px" }
     );
 
     observer.observe(el);
