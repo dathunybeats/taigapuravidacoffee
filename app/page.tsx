@@ -93,6 +93,16 @@ function Hero() {
       <div className="absolute right-0 top-0 h-full w-[50%] hidden sm:block pointer-events-none"
         style={{ background: "linear-gradient(to right, #2B1608 0%, #2B1608 20%, transparent 70%)" }} />
 
+      {/* Jaguar watermark — mobile only, natural aspect ratio */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/logo-mark-black.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute right-4 bottom-4 brightness-0 invert pointer-events-none select-none sm:hidden"
+        style={{ width: "38vw", opacity: 0.08 }}
+      />
+
       <div className="relative z-10 max-w-6xl mx-auto w-full px-5 sm:px-12 page-enter">
         <p className="text-[#C4622D] text-[10px] sm:text-xs tracking-[0.35em] uppercase mb-5 sm:mb-6">
           Charlottesville, VA · Coffee Catering
