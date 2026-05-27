@@ -264,7 +264,7 @@ function AboutTeaser() {
                 src="/img-lifestyle-mountains.jpg"
                 alt="Taïga iced drink held up against the Blue Ridge mountains"
                 className="rounded-2xl w-full object-cover object-top"
-                style={{ aspectRatio: "3/4" }}
+                style={{ aspectRatio: "1/1", maxHeight: "480px" }}
               />
               {/* Floating inset photo */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
