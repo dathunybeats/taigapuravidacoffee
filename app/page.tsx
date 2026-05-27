@@ -367,9 +367,8 @@ function SiteFooter() {
             <a href="#about" className={linkCls} style={navStyle}>About</a>
             <a href="#services" className={linkCls} style={navStyle}>Services</a>
             <a href="#quote" className={linkCls} style={navStyle}>Get a Quote</a>
-            {/* TODO: confirm Instagram handle before launch */}
             <a
-              href="https://instagram.com/taigapuravidacoffee"
+              href="https://www.instagram.com/taiga_puravidacoffee/"
               target="_blank"
               rel="noopener noreferrer"
               className={linkCls}
