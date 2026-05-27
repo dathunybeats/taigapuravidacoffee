@@ -32,6 +32,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <PhotoStrip />
         <AboutTeaser />
         <QuoteSection />
       </main>
@@ -131,21 +132,25 @@ function Hero() {
 const services = [
   {
     number: "01",
+    icon: "/icon-latte.png",
     title: "Coffee Catering",
     body: "From intimate office gatherings to large corporate events, we bring a full-service espresso bar, trained baristas, and specialty-grade beans — all in one booking.",
   },
   {
     number: "02",
+    icon: "/icon-iced-coffee.png",
     title: "Espresso Bar",
     body: "Hand-crafted drinks made to order. Cortados, lattes, cappuccinos — elevated, personalized, and made with care for every guest in line.",
   },
   {
     number: "03",
+    icon: "/icon-cold-brew.png",
     title: "Cold Brew",
     body: "Slow-steeped in-house with our Costa Rican single-origin beans. Rich, smooth, and served on tap or in bulk — perfect for warm weather events.",
   },
   {
     number: "04",
+    icon: "/icon-latte.png",
     title: "Drip Coffee",
     body: "Classic, consistent, never an afterthought. Our drip service delivers quality at scale so every attendee gets a cup worth drinking.",
   },
@@ -169,14 +174,52 @@ function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
           {services.map((s, i) => (
             <ScrollReveal key={s.title} delay={i * 80}>
-              <div className="bg-white border border-[#EDD9B8]/60 rounded-2xl p-7 sm:p-10 h-full">
-                <p className="text-[#C4622D] text-[10px] tracking-[0.3em] uppercase mb-5">{s.number}</p>
+              <div className="bg-white border border-[#EDD9B8]/60 rounded-2xl p-7 sm:p-10 h-full flex flex-col">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={s.icon} alt="" aria-hidden="true" className="w-16 h-16 object-contain mb-5 select-none" />
+                <p className="text-[#C4622D] text-[10px] tracking-[0.3em] uppercase mb-3">{s.number}</p>
                 <h3 className="text-[#2B1608] text-2xl sm:text-3xl mb-3">{s.title}</h3>
                 <p className="text-[#5C2D0E]/60 text-sm leading-6 font-light">{s.body}</p>
               </div>
             </ScrollReveal>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Photo strip ── */
+
+function PhotoStrip() {
+  return (
+    <section className="bg-[#FAF6F0] pb-20 sm:pb-32">
+      <div className="max-w-6xl mx-auto px-5 sm:px-12">
+        <ScrollReveal>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-outdoor.png"
+              alt="Steaming coffee and croissant at an outdoor café table"
+              className="rounded-2xl w-full object-cover"
+              style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "320px" }}
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-table.png"
+              alt="Coffee and croissant on a wooden café table"
+              className="rounded-2xl w-full object-cover mt-8"
+              style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "320px" }}
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-hand-latte.png"
+              alt="Hand holding a beautifully crafted latte"
+              className="rounded-2xl w-full object-cover hidden sm:block"
+              style={{ aspectRatio: "3/4", objectPosition: "center top", maxHeight: "320px" }}
+            />
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
@@ -215,20 +258,21 @@ function AboutTeaser() {
           </ScrollReveal>
 
           <ScrollReveal delay={150}>
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+            <div className="relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img-lifestyle-mountains.jpg"
-                alt="Taïga iced drink with Blue Ridge mountains"
+                alt="Taïga iced drink held up against the Blue Ridge mountains"
                 className="rounded-2xl w-full object-cover object-top"
                 style={{ aspectRatio: "3/4" }}
               />
+              {/* Floating inset photo */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img-kids-cups.jpg"
                 alt="Community enjoying Taïga coffee"
-                className="rounded-2xl w-full object-cover object-center mt-8"
-                style={{ aspectRatio: "3/4" }}
+                className="absolute -bottom-6 -left-4 sm:-left-8 w-2/5 rounded-xl object-cover border-4 border-white shadow-lg"
+                style={{ aspectRatio: "1" }}
               />
             </div>
           </ScrollReveal>
