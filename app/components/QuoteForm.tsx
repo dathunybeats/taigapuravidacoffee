@@ -2,10 +2,8 @@
 
 import React, { useState, FormEvent } from "react";
 
-// Add NEXT_PUBLIC_GHL_WEBHOOK_URL to .env.local once Sebastian provisions the GHL sub-account
-const WEBHOOK_URL = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL ?? "";
-
 type Status = "idle" | "loading" | "success" | "error";
+type ErrorDetail = string | null;
 
 interface FormData {
   name: string;
@@ -18,6 +16,7 @@ interface FormData {
 
 export default function QuoteForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const [errorDetail, setErrorDetail] = useState<ErrorDetail>(null);
   const [form, setForm] = useState<FormData>({
     name: "",
     email: "",
@@ -34,16 +33,22 @@ export default function QuoteForm() {
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     setStatus("loading");
+    setErrorDetail(null);
     try {
-      if (!WEBHOOK_URL) throw new Error("Webhook not configured");
-      const res = await fetch(WEBHOOK_URL, {
+      const res = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      if (!res.ok) throw new Error("Request failed");
+      if (!res.ok) {
+        const text = await res.text();
+        setErrorDetail(`HTTP ${res.status}: ${text}`);
+        setStatus("error");
+        return;
+      }
       setStatus("success");
-    } catch {
+    } catch (err) {
+      setErrorDetail(err instanceof Error ? err.message : String(err));
       setStatus("error");
     }
   }
@@ -149,12 +154,19 @@ export default function QuoteForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-red-500 text-sm">
-          Something went wrong. Email us directly at{" "}
-          <a href="mailto:info@taigapuravidacoffee.com" className="underline">
-            info@taigapuravidacoffee.com
-          </a>
-        </p>
+        <div className="text-red-500 text-sm space-y-1">
+          <p>
+            Something went wrong. Email us directly at{" "}
+            <a href="mailto:info@taigapuravidacoffee.com" className="underline">
+              info@taigapuravidacoffee.com
+            </a>
+          </p>
+          {errorDetail && (
+            <p className="font-mono text-xs bg-red-50 border border-red-200 rounded p-2 break-all">
+              {errorDetail}
+            </p>
+          )}
+        </div>
       )}
 
       <button
