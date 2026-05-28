@@ -254,8 +254,9 @@ function CorporateEvents() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-          <ScrollReveal delay={0}>
+        <div className="grid grid-cols-6 gap-3 sm:gap-4">
+          {/* Row 1 — three portrait shots */}
+          <ScrollReveal delay={0} className="col-span-6 sm:col-span-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-front.jpg"
@@ -264,22 +265,41 @@ function CorporateEvents() {
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
             />
           </ScrollReveal>
-          <ScrollReveal delay={80}>
+          <ScrollReveal delay={80} className="col-span-6 sm:col-span-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-espresso-pull.jpg"
               alt="Espresso being pulled into a Taïga branded cup"
-              className="rounded-2xl w-full object-cover mt-0 sm:mt-10"
+              className="rounded-2xl w-full object-cover sm:mt-10"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
             />
           </ScrollReveal>
-          <ScrollReveal delay={160}>
+          <ScrollReveal delay={160} className="col-span-6 sm:col-span-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-barista-cart.jpg"
               alt="Taïga barista preparing drinks at the coffee cart"
-              className="rounded-2xl w-full object-cover hidden sm:block"
+              className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "3/4", objectPosition: "center top", maxHeight: "400px" }}
+            />
+          </ScrollReveal>
+          {/* Row 2 — two landscape shots */}
+          <ScrollReveal delay={60} className="col-span-6 sm:col-span-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-service-moment.jpg"
+              alt="Barista handing a Taïga cup to a guest at a corporate event"
+              className="rounded-2xl w-full object-cover"
+              style={{ aspectRatio: "4/3", objectPosition: "center", maxHeight: "340px" }}
+            />
+          </ScrollReveal>
+          <ScrollReveal delay={140} className="col-span-6 sm:col-span-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-cart-wide.jpg"
+              alt="Full Taïga coffee cart setup with barista and guest at a corporate venue"
+              className="rounded-2xl w-full object-cover"
+              style={{ aspectRatio: "4/3", objectPosition: "center", maxHeight: "340px" }}
             />
           </ScrollReveal>
         </div>
