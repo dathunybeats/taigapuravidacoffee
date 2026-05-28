@@ -33,6 +33,7 @@ export default function Home() {
         <Hero />
         <Services />
         <PhotoStrip />
+        <CorporateEvents />
         <AboutTeaser />
         <QuoteSection />
       </main>
@@ -230,6 +231,74 @@ function PhotoStrip() {
             />
           </div>
         </ScrollReveal>
+      </div>
+    </section>
+  );
+}
+
+/* ── Corporate Events ── */
+
+function CorporateEvents() {
+  return (
+    <section className="bg-[#FAF6F0] py-20 sm:py-32">
+      <div className="max-w-6xl mx-auto px-5 sm:px-12">
+
+        <ScrollReveal>
+          <div className="mb-14 sm:mb-16">
+            <p className="text-[#C4622D] text-[10px] sm:text-xs tracking-[0.35em] uppercase mb-4 sm:mb-5">
+              Corporate Events
+            </p>
+            <h2 className="text-[#2B1608] text-4xl sm:text-5xl leading-tight">
+              Bring the café<br className="hidden sm:block" /> to your office.
+            </h2>
+          </div>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          <ScrollReveal delay={0}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-cart-front.jpg"
+              alt="Taïga branded coffee cart with La Marzocco espresso machine at a corporate venue"
+              className="rounded-2xl w-full object-cover"
+              style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
+            />
+          </ScrollReveal>
+          <ScrollReveal delay={80}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-espresso-pull.jpg"
+              alt="Espresso being pulled into a Taïga branded cup"
+              className="rounded-2xl w-full object-cover mt-0 sm:mt-10"
+              style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
+            />
+          </ScrollReveal>
+          <ScrollReveal delay={160}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-barista-cart.jpg"
+              alt="Taïga barista preparing drinks at the coffee cart"
+              className="rounded-2xl w-full object-cover hidden sm:block"
+              style={{ aspectRatio: "3/4", objectPosition: "center top", maxHeight: "400px" }}
+            />
+          </ScrollReveal>
+        </div>
+
+        <ScrollReveal delay={80}>
+          <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+            <p className="text-[#5C2D0E]/60 text-base leading-7 font-light max-w-lg">
+              Our mobile espresso cart arrives fully equipped — specialty-grade beans, a trained barista, and our signature La Marzocco machine. No venue sourcing, no coffee hassle, just an elevated experience for your team or guests.
+            </p>
+            <a
+              href="#quote"
+              className="shrink-0 inline-flex items-center bg-[#C4622D] text-white px-7 py-3.5 rounded-full sweep-btn"
+              style={{ ...btnStyle, "--sweep-bg": "#E07832" } as React.CSSProperties}
+            >
+              Get a Quote
+            </a>
+          </div>
+        </ScrollReveal>
+
       </div>
     </section>
   );
