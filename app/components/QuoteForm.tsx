@@ -54,7 +54,7 @@ export default function QuoteForm() {
   }
 
   const inputCls =
-    "w-full bg-white border border-[#EDD9B8] rounded-xl px-4 py-3 text-[#2B1608] text-sm placeholder:text-[#2B1608]/30 focus:outline-none focus:border-[#C4622D] transition-colors";
+    "w-full min-w-0 bg-white border border-[#EDD9B8] rounded-xl px-4 py-3 text-[#2B1608] text-sm placeholder:text-[#2B1608]/30 focus:outline-none focus:border-[#C4622D] transition-colors";
   const labelCls =
     "block text-[#2B1608]/50 text-[10px] tracking-[0.2em] uppercase mb-1.5";
 
