@@ -10,7 +10,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Taïga Pura Vida Coffee",
+  metadataBase: new URL("https://taigapuravidacoffee.com"),
+  title: { default: "Taïga Pura Vida Coffee", template: "%s | Taïga Pura Vida Coffee" },
   description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
   icons: {
     icon: "/logo-mark-amber.png",

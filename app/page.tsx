@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import ScrollReveal from "./components/ScrollReveal";
 import QuoteForm from "./components/QuoteForm";
+import HomeNav from "./components/HomeNav";
 
 export const metadata: Metadata = {
   title: "Taïga Pura Vida Coffee — Specialty Coffee Catering | Charlottesville, VA",
@@ -28,7 +29,7 @@ const navStyle: React.CSSProperties = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FAF6F0]">
-      <Navbar />
+      <HomeNav />
       <main>
         <Hero />
         <Services />
@@ -39,41 +40,6 @@ export default function Home() {
       </main>
       <SiteFooter />
     </div>
-  );
-}
-
-/* ── Navbar ── */
-
-function Navbar() {
-  return (
-    <header className="sticky top-0 z-50 bg-[#2B1608] px-5 sm:px-12 py-4 sm:py-5 flex items-center justify-between">
-      <a href="/" aria-label="Taïga Pura Vida Coffee — home">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logo-horizontal.png"
-          alt="Taïga Pura Vida Coffee"
-          className="h-7 sm:h-9 object-contain brightness-0 invert"
-          style={{ width: "auto" }}
-        />
-      </a>
-
-      <nav className="hidden sm:flex items-center gap-8" aria-label="Main navigation">
-        <a href="#about" className="text-[#EDD9B8]/60 hover:text-[#EDD9B8] transition-colors" style={navStyle}>
-          About
-        </a>
-        <a href="#services" className="text-[#EDD9B8]/60 hover:text-[#EDD9B8] transition-colors" style={navStyle}>
-          Services
-        </a>
-      </nav>
-
-      <a
-        href="#quote"
-        className="bg-[#C4622D] text-white px-5 sm:px-7 py-2 sm:py-2.5 rounded-full sweep-btn"
-        style={{ ...btnStyle, "--sweep-bg": "#E07832" } as React.CSSProperties}
-      >
-        Get a Quote
-      </a>
-    </header>
   );
 }
 
