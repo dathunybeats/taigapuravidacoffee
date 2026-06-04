@@ -147,7 +147,7 @@ function QuoteSection() {
 
           {/* Right — form (matches homepage QuoteForm style) */}
           <ScrollReveal delay={150}>
-            <div className="bg-white rounded-3xl p-7 sm:p-10 border border-[#EDD9B8]/60 shadow-sm">
+            <div className="bg-white rounded-2xl p-7 sm:p-10 border border-[#EDD9B8]/60 shadow-sm">
               <p className="text-[#2B1608]/40 text-[10px] tracking-[0.2em] uppercase mb-6">Request a Custom Quote</p>
               <QuoteForm />
             </div>
