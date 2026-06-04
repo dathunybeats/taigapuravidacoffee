@@ -31,6 +31,7 @@ export default function ServicesPage() {
       <main>
         <ServicesHero />
         <ServiceCards />
+        <WhatWeBring />
         <WhatsIncluded />
         <CateringInAction />
         <EventTypes />
@@ -150,6 +151,71 @@ function ServiceCards() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── What We Bring ── */
+
+const whatWeBringCategories = [
+  "Specialty Espresso Bar",
+  "Custom Signature Drinks",
+  "Branded Event Experiences",
+  "Costa Rican Coffee Origin",
+];
+
+function WhatWeBring() {
+  return (
+    <section className="bg-[#FAE8D0] py-20 sm:py-32">
+      <div className="max-w-6xl mx-auto px-5 sm:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-16 items-center">
+
+          <ScrollReveal>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/photo-cart-front.jpg"
+              alt="Taïga branded coffee cart at an event with branded espresso cups"
+              className="rounded-2xl w-full object-cover"
+              style={{ aspectRatio: "4/5", objectPosition: "center", maxHeight: "560px" }}
+            />
+          </ScrollReveal>
+
+          <ScrollReveal delay={150}>
+            <div>
+              <p className="text-[#7B1F1F] text-[10px] sm:text-xs tracking-[0.35em] uppercase mb-6">
+                What We Bring
+              </p>
+              <h2
+                className="leading-tight text-4xl sm:text-5xl mb-6"
+                style={{ color: "#7B1F1F" }}
+              >
+                A full specialty<br />bar experience,<br />custom to your event.
+              </h2>
+              <p className="text-[#4A1C0A]/75 text-base leading-7 font-light mb-8">
+                We bring a complete specialty espresso bar to your event — custom menus designed around your occasion, with every bean sourced directly from family-owned fincas in Costa Rica.
+              </p>
+
+              <ul className="space-y-3.5 mb-10">
+                {whatWeBringCategories.map((cat) => (
+                  <li key={cat} className="flex items-center gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#7B1F1F] shrink-0" aria-hidden="true" />
+                    <span className="text-[#4A1C0A] text-sm font-light">{cat}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="/contact"
+                className="inline-flex items-center bg-[#7B1F1F] text-[#FAE8D0] px-7 py-3.5 rounded-full sweep-btn"
+                style={{ ...btnStyle, "--sweep-bg": "#5C1818" } as React.CSSProperties}
+              >
+                Request a Custom Quote
+              </a>
+            </div>
+          </ScrollReveal>
+
         </div>
       </div>
     </section>
