@@ -5,11 +5,11 @@ import React, { useState } from "react";
 const faqs = [
   {
     q: "How far in advance should I book?",
-    a: "We recommend booking at least 2–4 weeks ahead for smaller events, and 6–8 weeks for weddings or large corporate events. That said, reach out regardless — we'll always do our best to accommodate.",
+    a: "We recommend booking at least 2-4 weeks ahead for smaller events, and 6-8 weeks for weddings or large corporate events. That said, reach out regardless. We'll always do our best to accommodate.",
   },
   {
     q: "How many guests can you serve?",
-    a: "Our espresso bar comfortably serves 50–500+ guests depending on service duration and setup. We tailor the staffing and equipment to your headcount.",
+    a: "Our espresso bar comfortably serves 50-500+ guests depending on service duration and setup. We tailor the staffing and equipment to your headcount.",
   },
   {
     q: "What's included in the service?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Do you travel outside of Charlottesville?",
-    a: "Yes — we serve events throughout Central Virginia and the greater Mid-Atlantic region. Travel fees may apply depending on distance. Just ask when you request a quote.",
+    a: "Yes, we serve events throughout Central Virginia and the greater Mid-Atlantic region. Travel fees may apply depending on distance. Just ask when you request a quote.",
   },
   {
     q: "Can I customize the drinks menu?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "How long does setup take?",
-    a: "We typically need 45–60 minutes for setup before your event starts. We'll coordinate arrival time with your venue so everything is ready before the first guest arrives.",
+    a: "We typically need 45-60 minutes for setup before your event starts. We'll coordinate arrival time with your venue so everything is ready before the first guest arrives.",
   },
   {
     q: "Do you require a deposit?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "What if my event date changes?",
-    a: "Life happens — we get it. We'll work with you to reschedule whenever possible. Our rescheduling and cancellation policy is included in your booking agreement.",
+    a: "Life happens, we get it. We'll work with you to reschedule whenever possible. Our rescheduling and cancellation policy is included in your booking agreement.",
   },
 ];
 

@@ -9,10 +9,10 @@ export default function DesignDeck() {
       <header className="bg-[#2B1608] px-5 sm:px-12 py-5 sm:py-8 flex items-center justify-between">
         <div className="flex items-center gap-3 sm:gap-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="Taïga Pura Vida Coffee" className="h-10 w-10 sm:h-16 sm:w-16 object-contain brightness-0 invert opacity-90" />
+          <img src="/logo.png" alt="Taiga Pura Vida Coffee" className="h-10 w-10 sm:h-16 sm:w-16 object-contain brightness-0 invert opacity-90" />
           <div>
             <p className="text-[#C4622D] text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-0.5 sm:mb-1">Design Deck</p>
-            <h1 className="text-[#EDD9B8] text-base sm:text-2xl font-light tracking-widest uppercase">Taïga Pura Vida Coffee</h1>
+            <h1 className="text-[#EDD9B8] text-base sm:text-2xl font-light tracking-widest uppercase">Taiga Pura Vida Coffee</h1>
           </div>
         </div>
         <p className="text-[#EDD9B8]/40 text-xs sm:text-sm tracking-widest hidden sm:block">v1.0</p>
@@ -23,7 +23,7 @@ export default function DesignDeck() {
         {/* 01 Brand Essence */}
         <ScrollReveal>
           <section>
-            <SectionLabel>01 — Brand Essence</SectionLabel>
+            <SectionLabel>01 - Brand Essence</SectionLabel>
 
             <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase mt-8 mb-4">Lockups</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -72,7 +72,7 @@ export default function DesignDeck() {
               </div>
             </div>
 
-            <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase mt-8 mb-4">Jaguar mark — standalone</p>
+            <p className="text-[#C4622D] text-xs tracking-[0.3em] uppercase mt-8 mb-4">Jaguar mark - standalone</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-4 sm:p-6 flex flex-col items-center gap-3">
                 <span className="text-[#2B1608]/40 text-[10px] tracking-[0.25em] uppercase">Black</span>
@@ -99,7 +99,7 @@ export default function DesignDeck() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
               <EssenceCard title="Wild" body="The jaguar. Untamed, proud, rooted in the forest. The brand carries nature's quiet confidence." />
               <EssenceCard title="Warm" body="Cocoa tones, amber light, the smell of fresh roast. Every touchpoint should feel like a warm welcome." />
-              <EssenceCard title="Pura Vida" body="Costa Rican for 'pure life.' Unhurried, joyful, authentic. Not just coffee — a way of being." />
+              <EssenceCard title="Pura Vida" body="Costa Rican for 'pure life.' Unhurried, joyful, authentic. Not just coffee - a way of being." />
             </div>
           </section>
         </ScrollReveal>
@@ -107,7 +107,7 @@ export default function DesignDeck() {
         {/* 02 Color Palette */}
         <ScrollReveal>
           <section>
-            <SectionLabel>02 — Color Palette</SectionLabel>
+            <SectionLabel>02 - Color Palette</SectionLabel>
             <div className="grid grid-cols-2 gap-4 mt-8 sm:grid-cols-5">
               <ColorSwatch bg="#2B1608" name="Espresso" hex="#2B1608" role="Primary" />
               <ColorSwatch bg="#5C2D0E" name="Dark Roast" hex="#5C2D0E" role="Secondary" />
@@ -121,30 +121,30 @@ export default function DesignDeck() {
         {/* 03 Typography */}
         <ScrollReveal>
           <section>
-            <SectionLabel>03 — Typography</SectionLabel>
+            <SectionLabel>03 - Typography</SectionLabel>
             <div className="mt-8 bg-white rounded-2xl p-6 sm:p-10 border border-[#EDD9B8]/60 space-y-8 sm:space-y-10">
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Display — El Hidrant · Headline</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Display - El Hidrant · Headline</p>
                 <h1 className="text-[#2B1608] leading-none text-5xl sm:text-7xl">
                   Pure Life.<br />Perfect Cup.
                 </h1>
               </div>
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Heading — El Hidrant · H2</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Heading - El Hidrant · H2</p>
                 <h2 className="text-[#2B1608] text-3xl sm:text-4xl">Sourced from the heart of Costa Rica</h2>
               </div>
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Subheading — El Hidrant · H3</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Subheading - El Hidrant · H3</p>
                 <h3 className="text-[#2B1608] text-xl sm:text-2xl">Small batch. Big flavour.</h3>
               </div>
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Body — GT Flexa Light · 300 · 1.6 line-height</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Body - GT Flexa Light · 300 · 1.6 line-height</p>
                 <p className="text-[#5C2D0E]/70 text-base leading-7" style={{ fontFamily: "var(--font-base)", fontWeight: 400 }}>
                   Every batch is small-roasted to order, honouring the farmers and the land that made it possible. No shortcuts. No compromises.
                 </p>
               </div>
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Label / Caption — GT Flexa Light · 0.3em tracking</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Label / Caption - GT Flexa Light · 0.3em tracking</p>
                 <p className="text-[#2B1608] text-xs tracking-[0.3em] uppercase" style={{ fontFamily: "var(--font-base)", fontWeight: 500 }}>
                   Single Origin · Washed Process · Light Roast
                 </p>
@@ -156,7 +156,7 @@ export default function DesignDeck() {
         {/* 04 UI Components */}
         <ScrollReveal>
           <section>
-            <SectionLabel>04 — UI Components</SectionLabel>
+            <SectionLabel>04 - UI Components</SectionLabel>
             <div className="mt-8 space-y-6">
 
               {/* Buttons */}
@@ -184,7 +184,7 @@ export default function DesignDeck() {
                 <nav className="flex items-center justify-between gap-4">
                   <div className="flex items-center shrink-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/logo-horizontal.png" alt="Taïga" className="h-8 sm:h-10 object-contain brightness-0 invert" />
+                    <img src="/logo-horizontal.png" alt="Taiga" className="h-8 sm:h-10 object-contain brightness-0 invert" />
                   </div>
                   <div className="hidden sm:flex gap-8">
                     {["Menu", "Story", "Brew", "Find us"].map((item) => (
@@ -227,15 +227,15 @@ export default function DesignDeck() {
         {/* 05 Page Layouts */}
         <ScrollReveal>
           <section>
-            <SectionLabel>05 — Page Layouts</SectionLabel>
+            <SectionLabel>05 - Page Layouts</SectionLabel>
             <div className="mt-8 space-y-4">
 
               {/* NAVBAR */}
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Navbar — wordmark</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Navbar - wordmark</p>
                 <div className="bg-[#2B1608] rounded-2xl px-5 sm:px-10 py-4 sm:py-5 flex items-center justify-between gap-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo-horizontal.png" alt="Taïga" className="h-8 sm:h-10 object-contain brightness-0 invert shrink-0" />
+                  <img src="/logo-horizontal.png" alt="Taiga" className="h-8 sm:h-10 object-contain brightness-0 invert shrink-0" />
                   <div className="hidden sm:flex gap-8">
                     {["Menu", "Story", "Brew", "Find us"].map((item) => (
                       <span key={item} className="text-[#EDD9B8]/70 text-sm cursor-pointer hover:text-[#EDD9B8] transition-colors" style={{ fontFamily: "var(--font-navigation)", fontWeight: 700 }}>
@@ -251,13 +251,13 @@ export default function DesignDeck() {
 
               {/* HERO */}
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Hero — black mark as watermark</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Hero - black mark as watermark</p>
                 <div className="bg-[#2B1608] rounded-2xl relative overflow-hidden" style={{ minHeight: 300 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/logo-mark-black.png" alt="" className="absolute -right-16 -bottom-8 brightness-0 invert opacity-[0.07]" style={{ height: 340 }} />
                   <div className="relative z-10 flex flex-col justify-end h-full p-6 sm:p-12" style={{ minHeight: 300 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/logo-wordmark.png" alt="Taïga" className="h-5 object-contain object-left brightness-0 invert mb-6 opacity-50" style={{ width: 120 }} />
+                    <img src="/logo-wordmark.png" alt="Taiga" className="h-5 object-contain object-left brightness-0 invert mb-6 opacity-50" style={{ width: 120 }} />
                     <h2 className="text-[#EDD9B8] leading-none mb-5 text-4xl sm:text-6xl">
                       Where the wild<br />meets the cup.
                     </h2>
@@ -275,7 +275,7 @@ export default function DesignDeck() {
 
               {/* VALUES */}
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Values strip — amber mark as icon</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Values strip - amber mark as icon</p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { title: "Direct Trade", body: "We work directly with farmers in Costa Rica, paying above fair-trade prices." },
@@ -294,19 +294,19 @@ export default function DesignDeck() {
 
               {/* ABOUT STRIP */}
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">About strip — horizontal lockup</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">About strip - horizontal lockup</p>
                 <div className="bg-[#FAF6F0] border border-[#EDD9B8]/60 rounded-2xl p-8 sm:p-12 flex flex-col items-center gap-6 text-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo-horizontal.png" alt="Taïga Pura Vida Coffee" className="h-14 sm:h-20 object-contain" />
+                  <img src="/logo-horizontal.png" alt="Taiga Pura Vida Coffee" className="h-14 sm:h-20 object-contain" />
                   <p className="text-[#5C2D0E]/70 text-base leading-7 max-w-xl font-light">
-                    Born in the wild, brewed with intention. Every cup is a small act of pura vida — pure life — shared between the land, the farmer, and you.
+                    Born in the wild, brewed with intention. Every cup is a small act of pura vida - pure life - shared between the land, the farmer, and you.
                   </p>
                 </div>
               </div>
 
               {/* DARK CTA */}
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">CTA section — cream mark on dark</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">CTA section - cream mark on dark</p>
                 <div className="bg-[#2B1608] rounded-2xl p-6 sm:p-12 relative overflow-hidden flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/logo-mark-cream.png" alt="" className="absolute -left-10 top-1/2 -translate-y-1/2 opacity-20 hidden sm:block" style={{ height: 260 }} />
@@ -325,10 +325,10 @@ export default function DesignDeck() {
 
               {/* FOOTER */}
               <div>
-                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Footer — square lockup</p>
+                <p className="text-[#C4622D] text-xs tracking-[0.25em] uppercase mb-3">Footer - square lockup</p>
                 <div className="bg-[#2B1608] rounded-2xl p-6 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-0 sm:justify-between">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/logo-square-brown.png" alt="Taïga" className="h-14 w-14 sm:h-20 sm:w-20 object-contain brightness-0 invert opacity-80" />
+                  <img src="/logo-square-brown.png" alt="Taiga" className="h-14 w-14 sm:h-20 sm:w-20 object-contain brightness-0 invert opacity-80" />
                   <div className="flex flex-wrap gap-4 sm:gap-10">
                     {["Menu", "Story", "Brew", "Find us", "Instagram"].map((item) => (
                       <span key={item} className="text-[#EDD9B8]/50 text-xs cursor-pointer hover:text-[#EDD9B8] transition-colors" style={{ fontFamily: "var(--font-navigation)", fontWeight: 700, textTransform: "uppercase" }}>
@@ -336,7 +336,7 @@ export default function DesignDeck() {
                       </span>
                     ))}
                   </div>
-                  <p className="text-[#EDD9B8]/25 text-xs">© 2026 Taïga</p>
+                  <p className="text-[#EDD9B8]/25 text-xs">© 2026 Taiga</p>
                 </div>
               </div>
 
@@ -347,7 +347,7 @@ export default function DesignDeck() {
         {/* 06 Spacing & Shape */}
         <ScrollReveal>
           <section>
-            <SectionLabel>06 — Spacing & Shape</SectionLabel>
+            <SectionLabel>06 - Spacing & Shape</SectionLabel>
             <div className="mt-8 bg-white rounded-2xl p-6 sm:p-10 border border-[#EDD9B8]/60">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-16">
                 <div>
@@ -389,7 +389,7 @@ export default function DesignDeck() {
           <section className="pb-8">
             <div className="bg-[#2B1608] rounded-2xl p-6 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-0 sm:justify-between">
               <div>
-                <p className="text-[#EDD9B8] text-base sm:text-lg tracking-widest uppercase font-light">Taïga Pura Vida Coffee</p>
+                <p className="text-[#EDD9B8] text-base sm:text-lg tracking-widest uppercase font-light">Taiga Pura Vida Coffee</p>
                 <p className="text-[#EDD9B8]/40 text-xs tracking-[0.25em] uppercase mt-1">Design System · 2026</p>
               </div>
               <p className="text-[#C4622D] text-xs tracking-[0.2em] uppercase">Ready to Build →</p>

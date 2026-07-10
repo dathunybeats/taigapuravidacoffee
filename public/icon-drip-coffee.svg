@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- Drip coffee (cafe chorreado): ceramic mug, fully black coffee, steam, no foam -->
+  <!-- Steam -->
+  <g stroke="#A0876A" stroke-width="7" stroke-linecap="round" opacity="0.75">
+    <path d="M100 62 C92 50 106 42 99 28"/>
+    <path d="M138 66 C130 54 144 46 137 30"/>
+  </g>
+  <!-- Saucer -->
+  <ellipse cx="118" cy="216" rx="80" ry="13" fill="#EDD9B8" stroke="#5C2D0E" stroke-width="6"/>
+  <!-- Handle -->
+  <path d="M186 116 Q226 118 224 148 Q222 178 180 178" stroke="#5C2D0E" stroke-width="12" stroke-linecap="round"/>
+  <!-- Mug body (ceramic) -->
+  <path d="M52 96 L58 186 Q60 208 84 208 L152 208 Q176 208 178 186 L184 96 Z" fill="#EDD9B8" stroke="#5C2D0E" stroke-width="7" stroke-linejoin="round"/>
+  <!-- Rim + coffee surface (totally black, no crema) -->
+  <ellipse cx="118" cy="96" rx="66" ry="16" fill="#EDD9B8" stroke="#5C2D0E" stroke-width="7"/>
+  <ellipse cx="118" cy="96" rx="52" ry="11" fill="#140C07"/>
+  <!-- Glaze highlight -->
+  <path d="M72 122 Q74 158 80 184" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+</svg>

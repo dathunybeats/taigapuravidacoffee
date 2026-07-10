@@ -16,7 +16,7 @@ export default function SiteFooter() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo-horizontal.png"
-              alt="Taïga Pura Vida Coffee"
+              alt="Taiga Pura Vida Coffee"
               className="h-7 object-contain brightness-0 invert opacity-70 mb-3"
               style={{ width: "auto" }}
             />
@@ -34,7 +34,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="border-t border-[#EDD9B8]/10 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-          <p className="text-[#EDD9B8]/20 text-xs">© 2026 Taïga Pura Vida Coffee · Charlottesville, VA</p>
+          <p className="text-[#EDD9B8]/20 text-xs">© 2026 Taiga Pura Vida Coffee · Charlottesville, VA</p>
           <a href="mailto:info@taigapuravidacoffee.com" className="text-[#EDD9B8]/20 hover:text-[#EDD9B8]/50 text-xs transition-colors">
             info@taigapuravidacoffee.com
           </a>

@@ -7,12 +7,12 @@ import ScrollReveal from "../components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Our Story",
   description:
-    "Learn how Taïga Pura Vida Coffee was born from a Costa Rican finca and a love of craft — and why that matters for your next event.",
+    "The story of Taiga Pura Vida Coffee, two sisters from Costa Rica sharing specialty coffee catering with Charlottesville, VA.",
   openGraph: {
-    title: "Our Story | Taïga Pura Vida Coffee",
+    title: "Our Story | Taiga Pura Vida Coffee",
     description:
-      "Born in the wild, brewed with intention. The story behind Taïga Pura Vida Coffee and our direct-trade Costa Rican roots.",
-    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taïga Pura Vida Coffee" }],
+      "Born in the wild, brewed with intention. The story behind Taiga Pura Vida Coffee and our Costa Rican roots.",
+    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taiga Pura Vida Coffee" }],
   },
 };
 
@@ -32,7 +32,6 @@ export default function AboutPage() {
         <AboutHero />
         <StorySection />
         <OriginSection />
-        <FounderSection />
         <CommunityCTA />
       </main>
       <SiteFooter />
@@ -63,7 +62,7 @@ function AboutHero() {
           Born in the wild.<br />Brewed with<br />intention.
         </h1>
         <p className="text-[#EDD9B8]/50 text-base sm:text-lg leading-7 max-w-md font-light">
-          Taïga Pura Vida Coffee is a specialty coffee catering company rooted in Costa Rican heritage and driven by craft.
+          Taiga Pura Vida Coffee is a specialty coffee catering company rooted in Costa Rican heritage and driven by craft.
         </p>
       </div>
     </section>
@@ -80,38 +79,47 @@ function StorySection() {
           <ScrollReveal>
             <div>
               <p className="text-[#C4622D] text-[10px] sm:text-xs tracking-[0.35em] uppercase mb-5">
-                The Difference
+                Our Story
               </p>
               <h2 className="text-[#2B1608] text-4xl sm:text-5xl leading-tight mb-6">
-                Pura vida isn&apos;t just a phrase. It&apos;s how we make coffee.
+                Two sisters from Costa Rica.
               </h2>
               <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-5">
-                Pura vida — pure life — is the Costa Rican philosophy of living simply, warmly, and with intention. It&apos;s the spirit behind every cup we pour.
-              </p>
-              <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-5">
-                Taïga Pura Vida Coffee was born from a love of extraordinary coffee and a deep connection to the land that grows it. We source our beans directly from family-owned fincas in Costa Rica&apos;s renowned highlands — no middlemen, no compromises.
+                We are two sisters from Costa Rica, born and raised in the beautiful Caribbean region of our country. Our roots run deep in coffee farming. Our grandparents worked on coffee farms, and we grew up surrounded by the values of hard work, humility, and dedication. We were also inspired by our father and uncle, who built our family&apos;s first business, teaching us the importance of honesty, loyalty, entrepreneurship, and serving our community.
               </p>
               <p className="text-[#5C2D0E]/65 text-base leading-7 font-light">
-                When we show up at your event, we bring more than equipment and baristas. We bring a story.
+                A few years ago, we moved to Virginia. After studying coffee and barista craft and spending time visiting coffee farms owned by friends and family back home, we decided to bring a piece of Costa Rica with us. We began importing coffee directly from the farms and sharing our passion for specialty coffee through every cup we serve. Today, Taiga Coffee is our way of sharing the warmth, tradition, and Pura Vida spirit of Costa Rica with every customer who visits us.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={150}>
+            {/*
+              Sisters photo grid. The two smaller slots below the childhood photo
+              are placeholders for the photos Tayna will send from her Costa Rica
+              trip: swap the src on the two <img> tags, no layout changes needed.
+            */}
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/img-cup-branded.jpg"
-                alt="Taïga branded marbled iced coffee cup"
-                className="rounded-2xl w-full object-cover"
-                style={{ aspectRatio: "1/1" }}
+                src="/photo-sisters-childhood.jpg"
+                alt="Tayna and Gaudy as little girls in Costa Rica"
+                className="col-span-2 rounded-2xl w-full object-cover"
+                style={{ aspectRatio: "4/3", objectPosition: "center" }}
               />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/photo-hand-latte.png"
-                alt="Hand holding a latte art coffee"
-                className="rounded-2xl w-full object-cover mt-8"
-                style={{ aspectRatio: "1/1", objectPosition: "center top" }}
+                src="/photo-farm-cherries.jpg"
+                alt="Picking ripe coffee cherries at a coffee farm in Costa Rica"
+                className="rounded-2xl w-full object-cover"
+                style={{ aspectRatio: "3/4", objectPosition: "center" }}
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photo-farm-harvest.jpg"
+                alt="Harvesting coffee cherries by hand in Costa Rica"
+                className="rounded-2xl w-full object-cover"
+                style={{ aspectRatio: "3/4", objectPosition: "center" }}
               />
             </div>
           </ScrollReveal>
@@ -133,15 +141,15 @@ function OriginSection() {
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/photo-outdoor.png"
-                alt="Steaming coffee and croissant at an outdoor café"
+                src="/photo-farm-field.jpg"
+                alt="Standing among the coffee plants at a coffee farm in Costa Rica"
                 className="rounded-2xl w-full object-cover"
                 style={{ aspectRatio: "3/4", maxHeight: "300px" }}
               />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/photo-table.png"
-                alt="Coffee on a wooden table"
+                src="/photo-farm-picking.jpg"
+                alt="Picking coffee at a coffee farm in Costa Rica"
                 className="rounded-2xl w-full object-cover mt-8"
                 style={{ aspectRatio: "3/4", maxHeight: "300px" }}
               />
@@ -157,69 +165,11 @@ function OriginSection() {
                 Directly from the farm to your cup.
               </h2>
               <p className="text-[#EDD9B8]/55 text-base leading-7 font-light mb-5">
-                Our coffee begins in Costa Rica&apos;s renowned highland growing region — where volcanic soil, mountain altitude, and a careful hand produce some of the world&apos;s most distinctive beans.
-              </p>
-              <p className="text-[#EDD9B8]/55 text-base leading-7 font-light mb-5">
-                We work directly with the farmers who grow them. Every variety reflects its terroir: bright acidity from the altitude, sweetness from the volcanic soil, complexity from careful processing.
+                We import our coffee directly from coffee farms owned by friends and family back home in Costa Rica.
               </p>
               <p className="text-[#EDD9B8]/55 text-base leading-7 font-light">
-                It&apos;s specialty coffee with a real story behind every sip — and we love sharing that story at your event.
+                It&apos;s specialty coffee with a real story behind every sip, and we love sharing that story at your event.
               </p>
-            </div>
-          </ScrollReveal>
-
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ── Founder ── */
-
-function FounderSection() {
-  return (
-    <section className="bg-white py-20 sm:py-32">
-      <div className="max-w-6xl mx-auto px-5 sm:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20 items-center">
-
-          <ScrollReveal>
-            {/* Placeholder for owner photo */}
-            <div
-              className="relative rounded-2xl overflow-hidden bg-[#FAF6F0] border border-[#EDD9B8]/60 flex items-center justify-center"
-              style={{ aspectRatio: "4/5", maxHeight: "520px" }}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo-mark-amber.png" alt="" aria-hidden="true" className="w-1/3 opacity-[0.15] pointer-events-none" />
-              <p className="absolute bottom-5 left-5 text-[#2B1608]/25 text-[10px] tracking-[0.25em] uppercase">
-                Photo · Coming soon
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={150}>
-            <div>
-              <p className="text-[#C4622D] text-[10px] sm:text-xs tracking-[0.35em] uppercase mb-5">
-                The Maker
-              </p>
-              <h2 className="text-[#2B1608] text-4xl sm:text-5xl leading-tight mb-6">
-                Meet Tayna.
-              </h2>
-              <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-5">
-                Tayna is the heart behind Taïga Pura Vida Coffee. With roots in Costa Rica and a passion for bringing people together over exceptional coffee, she built Taïga to share what she loves most — the warmth of pura vida, one cup at a time.
-              </p>
-              <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-5">
-                Based in Charlottesville, VA, she brings her carrito to corporate events, weddings, and celebrations across the region — creating coffee experiences that guests remember long after the last sip.
-              </p>
-              <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-10 italic">
-                &ldquo;Great coffee is a bridge — between cultures, between farmers and guests, between a moment and a memory.&rdquo;
-              </p>
-              <a
-                href="/contact"
-                className="inline-flex items-center bg-[#2B1608] text-[#EDD9B8] px-7 py-3.5 rounded-full sweep-btn"
-                style={{ ...btnStyle, "--sweep-bg": "#5C2D0E" } as React.CSSProperties}
-              >
-                Work With Us
-              </a>
             </div>
           </ScrollReveal>
 
@@ -248,10 +198,10 @@ function CommunityCTA() {
                   Proud to call Charlottesville home.
                 </h2>
                 <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-5">
-                  Nestled in Virginia&apos;s Blue Ridge foothills, Charlottesville is a city that values craft, community, and quality. It&apos;s the perfect home for Taïga Pura Vida Coffee.
+                  Nestled in Virginia&apos;s Blue Ridge foothills, Charlottesville is a city that values craft, community, and quality. It&apos;s the perfect home for Taiga Pura Vida Coffee.
                 </p>
                 <p className="text-[#5C2D0E]/65 text-base leading-7 font-light">
-                  From university events to vineyard celebrations to corporate gatherings, we&apos;ve had the privilege of serving this incredible community — and we&apos;re just getting started.
+                  From university events to vineyard celebrations to corporate gatherings, we&apos;ve had the privilege of serving this incredible community, and we&apos;re just getting started.
                 </p>
               </div>
             </ScrollReveal>
@@ -260,7 +210,7 @@ function CommunityCTA() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img-charlottesville.png"
-                alt="Downtown Charlottesville, Virginia — the heart of our community"
+                alt="Downtown Charlottesville, Virginia, the heart of our community"
                 className="rounded-2xl w-full object-cover"
                 style={{ aspectRatio: "1/1", maxHeight: "460px" }}
               />
@@ -280,7 +230,7 @@ function CommunityCTA() {
                   Ready to book?
                 </p>
                 <h2 className="text-[#EDD9B8] text-3xl sm:text-4xl leading-tight">
-                  Bring Taïga to your next event.
+                  Bring Taiga to your next event.
                 </h2>
               </div>
               <a

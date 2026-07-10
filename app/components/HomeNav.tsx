@@ -32,11 +32,11 @@ export default function HomeNav() {
     <header className="sticky top-0 z-50 bg-[#2B1608]">
       {/* ── Top bar ── */}
       <div className="px-5 sm:px-12 py-4 sm:py-5 flex items-center justify-between">
-        <a href="/" aria-label="Taïga Pura Vida Coffee — home">
+        <a href="/" aria-label="Taiga Pura Vida Coffee - home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo-horizontal.png"
-            alt="Taïga Pura Vida Coffee"
+            alt="Taiga Pura Vida Coffee"
             className="h-7 sm:h-9 object-contain brightness-0 invert"
             style={{ width: "auto" }}
           />

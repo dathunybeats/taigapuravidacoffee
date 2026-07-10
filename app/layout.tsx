@@ -11,20 +11,20 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://taigapuravidacoffee.com"),
-  title: { default: "Taïga Pura Vida Coffee", template: "%s | Taïga Pura Vida Coffee" },
+  title: { default: "Taiga Pura Vida Coffee", template: "%s | Taiga Pura Vida Coffee" },
   description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
   icons: {
     icon: "/logo-mark-amber.png",
     apple: "/logo-mark-amber.png",
   },
   openGraph: {
-    title: "Taïga Pura Vida Coffee",
+    title: "Taiga Pura Vida Coffee",
     description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
-    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taïga Pura Vida Coffee" }],
+    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taiga Pura Vida Coffee" }],
   },
   twitter: {
     card: "summary",
-    title: "Taïga Pura Vida Coffee",
+    title: "Taiga Pura Vida Coffee",
     description: "Specialty coffee rooted in Costa Rican heritage. Small-batch, ethically sourced, brewed with love.",
     images: ["/logo-square-brown.png"],
   },

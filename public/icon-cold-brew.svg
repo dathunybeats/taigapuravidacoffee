@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- Cold brew: tall glass, fully black coffee, ice, no foam / no cream -->
+  <!-- Liquid (totally black, right up to the fill line) -->
+  <path d="M76 74 L88 212 Q89 222 100 222 L156 222 Q167 222 168 212 L180 74 Z" fill="#140C07"/>
+  <!-- Ice cubes, barely catching light -->
+  <g stroke="#EDD9B8" stroke-opacity="0.38" stroke-width="4" stroke-linejoin="round">
+    <rect x="94" y="84" width="34" height="34" rx="7" transform="rotate(-8 111 101)" fill="#241407"/>
+    <rect x="134" y="92" width="30" height="30" rx="7" transform="rotate(11 149 107)" fill="#2A1808"/>
+    <rect x="112" y="120" width="28" height="28" rx="7" transform="rotate(-15 126 134)" fill="#1E1006"/>
+  </g>
+  <!-- Glass -->
+  <path d="M72 44 L87 213 Q88 224 100 224 L156 224 Q168 224 169 213 L184 44"
+        stroke="#5C2D0E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="128" cy="44" rx="56" ry="11" stroke="#5C2D0E" stroke-width="7"/>
+  <!-- Glass highlight -->
+  <path d="M92 78 Q95 140 99 196" stroke="#EDD9B8" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+  <!-- Condensation -->
+  <circle cx="165" cy="128" r="4" fill="#EDD9B8" fill-opacity="0.3"/>
+  <circle cx="158" cy="168" r="3" fill="#EDD9B8" fill-opacity="0.25"/>
+</svg>

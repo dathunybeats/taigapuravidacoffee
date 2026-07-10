@@ -7,12 +7,12 @@ import ScrollReveal from "../components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Specialty espresso bars, cold brew stations, and full-service coffee catering for weddings, corporate events, and celebrations in Charlottesville, VA and beyond.",
+    "Specialty espresso bars and full-service coffee catering for weddings, corporate events, and celebrations in Charlottesville, VA and beyond. Whole bean coffee, bottled cold brew, and iced lattes by email order.",
   openGraph: {
-    title: "Services | Taïga Pura Vida Coffee",
+    title: "Services | Taiga Pura Vida Coffee",
     description:
-      "Hand-crafted coffee experiences for every occasion — from intimate gatherings to 500-guest events.",
-    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taïga Pura Vida Coffee" }],
+      "Hand-crafted coffee experiences for every occasion, from intimate gatherings to 500-guest events.",
+    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taiga Pura Vida Coffee" }],
   },
 };
 
@@ -78,7 +78,7 @@ function ServicesHero() {
           Every event deserves<br />exceptional coffee.
         </h1>
         <p className="text-[#EDD9B8]/50 text-base sm:text-lg leading-7 max-w-md font-light">
-          From intimate office mornings to 500-guest weddings — we bring the bar, the baristas, and the beans.
+          From intimate office mornings to 500-guest weddings, we bring the bar, the baristas, and the beans.
         </p>
       </div>
     </section>
@@ -92,29 +92,29 @@ const services = [
     number: "01",
     icon: "/icon-latte.png",
     title: "Coffee Catering",
-    body: "Our flagship service. A full-service mobile coffee bar with trained baristas, specialty-grade Costa Rican beans, and everything needed for a seamless, memorable experience — from setup to teardown.",
+    body: "Our flagship service. A full-service mobile coffee bar with trained baristas, specialty-grade Costa Rican beans, and everything needed for a seamless, memorable experience, from setup to teardown.",
     details: ["Espresso-based drinks", "Seasonal specialties", "Dairy-free & decaf options", "Branded cups available"],
   },
   {
     number: "02",
     icon: "/icon-iced-coffee.png",
     title: "Espresso Bar",
-    body: "Hand-crafted drinks made to order. Cortados, lattes, cappuccinos — elevated, personalized, and made with care for every guest in line. Perfect as a standalone experience or paired with our catering package.",
+    body: "Hand-crafted drinks made to order. Cortados, lattes, cappuccinos. Elevated, personalized, and made with care for every guest in line. Perfect as a standalone experience or paired with our catering package.",
     details: ["Made-to-order drinks", "Latte art on request", "Signature drink menus", "High-volume capable"],
   },
   {
     number: "03",
-    icon: "/icon-cold-brew.png",
+    icon: "/icon-cold-brew.svg",
     title: "Cold Brew",
-    body: "Slow-steeped in-house with our Costa Rican single-origin beans. Rich, smooth, and served on tap or in bulk. An ideal add-on for warm weather events, outdoor celebrations, or all-day corporate gatherings.",
-    details: ["Single-origin Costa Rican beans", "On-tap or bottled service", "Nitro cold brew available", "Bulk options for large events"],
+    body: "Slow-steeped in-house with our Costa Rican single-origin beans and served straight and dark, no cream, no foam. Bottled and available by email order, alongside our iced lattes and whole bean coffee bags.",
+    details: ["Single-origin Costa Rican beans", "Served straight and dark", "Bottled cold brew and iced lattes", "Order by email"],
   },
   {
     number: "04",
-    icon: "/icon-latte.png",
+    icon: "/icon-drip-coffee.svg",
     title: "Drip Coffee",
-    body: "Classic, consistent, never an afterthought. Our drip service delivers quality at scale — ideal for early-morning corporate events, all-day conferences, or as a complement to our espresso bar.",
-    details: ["Specialty-grade drip coffee", "Station setup included", "Regular & decaf", "Ideal for large headcounts"],
+    body: "Cafe chorreado, Costa Rican drip coffee. Fully black, no foam, brewed from the beans we import directly from the farms.",
+    details: ["Cafe chorreado, Costa Rican style", "Fully black, no foam", "Specialty-grade drip coffee", "Brewed from directly imported beans"],
   },
 ];
 
@@ -176,7 +176,7 @@ function WhatWeBring() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-front.jpg"
-              alt="Taïga branded coffee cart at an event with branded espresso cups"
+              alt="Taiga branded coffee cart at an event with branded espresso cups"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "4/5", objectPosition: "center", maxHeight: "560px" }}
             />
@@ -191,7 +191,7 @@ function WhatWeBring() {
                 A full specialty<br />bar experience,<br />custom to your event.
               </h2>
               <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-8">
-                We bring a complete specialty espresso bar to your event — custom menus designed around your occasion, with every bean sourced directly from family-owned fincas in Costa Rica.
+                We bring a complete specialty espresso bar to your event, with custom menus designed around your occasion and every bean imported directly from coffee farms owned by friends and family back home in Costa Rica.
               </p>
 
               <ul className="space-y-3.5 mb-10">
@@ -224,7 +224,7 @@ function WhatWeBring() {
 const included = [
   { label: "Professional espresso equipment", desc: "Commercial-grade machines, grinders, and tools." },
   { label: "Trained baristas", desc: "Friendly, experienced, and focused on quality." },
-  { label: "Specialty-grade beans", desc: "Directly sourced from Costa Rican fincas." },
+  { label: "Specialty-grade beans", desc: "Imported directly from the farms in Costa Rica." },
   { label: "Full setup & teardown", desc: "We arrive early and leave the space spotless." },
   { label: "Cups, lids & napkins", desc: "Everything your guests need, included." },
   { label: "Custom drink menu", desc: "Built around your preferences and event style." },
@@ -289,7 +289,7 @@ function CateringInAction() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-front.jpg"
-              alt="Taïga branded coffee cart with La Marzocco espresso machine"
+              alt="Taiga branded coffee cart with La Marzocco espresso machine"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
             />
@@ -298,7 +298,7 @@ function CateringInAction() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-espresso-pull.jpg"
-              alt="Espresso being pulled into a Taïga branded cup"
+              alt="Espresso being pulled into a Taiga branded cup"
               className="rounded-2xl w-full object-cover sm:mt-10"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
             />
@@ -307,7 +307,7 @@ function CateringInAction() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-barista-cart.jpg"
-              alt="Taïga barista preparing drinks at the coffee cart"
+              alt="Taiga barista preparing drinks at the coffee cart"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "3/4", objectPosition: "center top", maxHeight: "400px" }}
             />
@@ -317,7 +317,7 @@ function CateringInAction() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-service-moment.jpg"
-              alt="Barista handing a Taïga cup to a guest at an event"
+              alt="Barista handing a Taiga cup to a guest at an event"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "4/3", objectPosition: "center", maxHeight: "340px" }}
             />
@@ -326,7 +326,7 @@ function CateringInAction() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-wide.jpg"
-              alt="Full Taïga coffee cart setup with barista and guest"
+              alt="Full Taiga coffee cart setup with barista and guest"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "4/3", objectPosition: "center", maxHeight: "340px" }}
             />
@@ -336,7 +336,7 @@ function CateringInAction() {
         <ScrollReveal delay={80}>
           <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <p className="text-[#5C2D0E]/60 text-base leading-7 font-light max-w-lg">
-              Our mobile espresso cart arrives fully equipped — specialty-grade beans, a trained barista, and our signature La Marzocco machine. No venue sourcing, no coffee logistics, just an elevated experience for your guests.
+              Our mobile espresso cart arrives fully equipped with specialty-grade beans, a trained barista, and our signature La Marzocco machine. No venue sourcing, no coffee logistics, just an elevated experience for your guests.
             </p>
             <a
               href="/contact"
@@ -359,7 +359,7 @@ const eventTypes = [
   {
     tag: "Weddings",
     title: "Your wedding day deserves more than average coffee.",
-    desc: "We design a signature drink menu around your palette and event theme — from specialty lattes to seasonal cold brew. Guests love the experience; couples love the ease. We handle logistics from delivery to teardown.",
+    desc: "We design a signature drink menu around your palette and event theme, from specialty lattes to seasonal favorites. Guests love the experience; couples love the ease. We handle logistics from delivery to teardown.",
     highlights: ["Signature drink menus", "Latte art on request", "Dairy-free & decaf options", "Branded cups available"],
     img: "/img-wedding.png",
     imgAlt: "Beautiful floral arrangement at a wedding welcome sign",
@@ -371,13 +371,13 @@ const eventTypes = [
     desc: "From product launches to all-hands meetings, an espresso bar changes the energy of any corporate event. We arrive early, set up seamlessly, and serve high-volume drinks without the café line.",
     highlights: ["High-volume service", "Office catering", "Product launches", "Conference & team days"],
     img: "/img-corporate-event.png",
-    imgAlt: "Taïga barista serving guests at the coffee cart during a corporate event",
+    imgAlt: "Taiga barista serving guests at the coffee cart during a corporate event",
     imgRight: true,
   },
   {
     tag: "Private Parties",
     title: "Any occasion worth celebrating deserves great coffee.",
-    desc: "Birthdays, vineyard celebrations, graduations, pop-up markets — we tailor every detail to your event. We serve throughout Central Virginia and the greater Mid-Atlantic region.",
+    desc: "Birthdays, vineyard celebrations, graduations, pop-up markets. We tailor every detail to your event. We serve throughout Central Virginia and the greater Mid-Atlantic region.",
     highlights: ["Flexible setup & sizing", "Outdoor & vineyard events", "University & campus events", "Pop-ups & markets"],
     img: "/img-private-party.png",
     imgAlt: "Guests raising glasses at an intimate private dinner party",
@@ -446,7 +446,7 @@ function ServicesCTA() {
                 Ready to book?
               </p>
               <h2 className="text-[#EDD9B8] text-3xl sm:text-4xl leading-tight">
-                Bring Taïga to your next event.
+                Bring Taiga to your next event.
               </h2>
             </div>
             <a

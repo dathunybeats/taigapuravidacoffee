@@ -113,7 +113,7 @@ export default function MultiStepForm() {
             <label className={labelCls}>Phone</label>
             <input type="tel" className={inputCls} placeholder="(555) 000-0000" value={form.phone} onChange={e => set("phone", e.target.value)} />
           </div>
-          <StepButton label="Next — Event Details" />
+          <StepButton label="Next: Event Details" />
         </form>
       )}
 
@@ -155,7 +155,7 @@ export default function MultiStepForm() {
             <button type="button" onClick={() => setStep(0)} className="flex-1 border border-[#EDD9B8]/25 text-[#EDD9B8]/60 py-3.5 rounded-full hover:text-[#EDD9B8] hover:border-[#EDD9B8]/50 transition-colors text-sm" style={{ fontFamily: "var(--font-button)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px" }}>
               Back
             </button>
-            <StepButton label="Next — Message" className="flex-[2]" />
+            <StepButton label="Next: Message" className="flex-[2]" />
           </div>
         </form>
       )}

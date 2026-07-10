@@ -5,9 +5,9 @@ import QuoteForm from "./components/QuoteForm";
 import HomeNav from "./components/HomeNav";
 
 export const metadata: Metadata = {
-  title: "Taïga Pura Vida Coffee — Specialty Coffee Catering | Charlottesville, VA",
+  title: "Taiga Pura Vida Coffee | Specialty Coffee Catering | Charlottesville, VA",
   description:
-    "Farm-to-cup specialty coffee catering for corporate events, weddings, and celebrations in Charlottesville, VA and beyond. Espresso bars, cold brew, and drip service — directly sourced from Costa Rica.",
+    "Farm-to-cup specialty coffee catering for corporate events, weddings, and celebrations in Charlottesville, VA and beyond. Espresso bars at your event, plus whole bean coffee, bottled cold brew, and iced lattes by email order, imported directly from the farms in Costa Rica.",
 };
 
 const btnStyle: React.CSSProperties = {
@@ -81,7 +81,7 @@ function Hero() {
         </h1>
 
         <p className="text-[#EDD9B8]/50 text-base sm:text-lg leading-7 max-w-lg mb-7 sm:mb-8 font-light">
-          Specialty espresso bars, cold brew stations, and full-service coffee setups for corporate events, weddings, and celebrations.
+          Specialty espresso bars and full-service coffee setups for corporate events, weddings, and celebrations.
         </p>
 
         <div className="flex flex-wrap gap-3 sm:gap-4">
@@ -112,25 +112,25 @@ const services = [
     number: "01",
     icon: "/icon-latte.png",
     title: "Coffee Catering",
-    body: "From intimate office gatherings to large corporate events, we bring a full-service espresso bar, trained baristas, and specialty-grade beans — all in one booking.",
+    body: "From intimate office gatherings to large corporate events, we bring a full-service espresso bar, trained baristas, and specialty-grade beans, all in one booking.",
   },
   {
     number: "02",
     icon: "/icon-iced-coffee.png",
     title: "Espresso Bar",
-    body: "Hand-crafted drinks made to order. Cortados, lattes, cappuccinos — elevated, personalized, and made with care for every guest in line.",
+    body: "Hand-crafted drinks made to order. Cortados, lattes, cappuccinos. Elevated, personalized, and made with care for every guest in line.",
   },
   {
     number: "03",
-    icon: "/icon-cold-brew.png",
+    icon: "/icon-cold-brew.svg",
     title: "Cold Brew",
-    body: "Slow-steeped in-house with our Costa Rican single-origin beans. Rich, smooth, and served on tap or in bulk — perfect for warm weather events.",
+    body: "Slow-steeped in-house with our Costa Rican single-origin beans and served straight and dark, no cream, no foam. Bottled and available by email order, alongside our iced lattes and whole bean coffee.",
   },
   {
     number: "04",
-    icon: "/icon-latte.png",
+    icon: "/icon-drip-coffee.svg",
     title: "Drip Coffee",
-    body: "Classic, consistent, never an afterthought. Our drip service delivers quality at scale so every attendee gets a cup worth drinking.",
+    body: "Cafe chorreado, Costa Rican drip coffee. Fully black, no foam, brewed from the beans we import directly from the farms.",
   },
 ];
 
@@ -186,7 +186,7 @@ function WhatWeBring() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-front.jpg"
-              alt="Taïga branded coffee cart at an event with branded espresso cups"
+              alt="Taiga branded coffee cart at an event with branded espresso cups"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "4/5", objectPosition: "center", maxHeight: "560px" }}
             />
@@ -201,7 +201,7 @@ function WhatWeBring() {
                 A full specialty<br />bar experience,<br />custom to your event.
               </h2>
               <p className="text-[#EDD9B8]/50 text-base leading-7 font-light mb-8">
-                We bring a complete specialty espresso bar to your event — custom menus designed around your occasion, with every bean sourced directly from family-owned fincas in Costa Rica.
+                We bring a complete specialty espresso bar to your event, with custom menus designed around your occasion and every bean imported directly from coffee farms owned by friends and family back home in Costa Rica.
               </p>
 
               <ul className="space-y-3.5 mb-10">
@@ -239,15 +239,15 @@ function PhotoStrip() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/photo-outdoor.png"
-              alt="Steaming coffee and croissant at an outdoor café table"
+              src="/photo-machine-cups.jpg"
+              alt="Taiga espresso machine and branded cups at the coffee cart"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "320px" }}
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/photo-table.png"
-              alt="Coffee and croissant on a wooden café table"
+              src="/photo-chorreado.jpg"
+              alt="Cafe chorreado, Costa Rican pour-over coffee, served black alongside a bag of Taiga specialty coffee"
               className="rounded-2xl w-full object-cover mt-8"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "320px" }}
             />
@@ -289,7 +289,7 @@ function CorporateEvents() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-front.jpg"
-              alt="Taïga branded coffee cart with La Marzocco espresso machine at a corporate venue"
+              alt="Taiga branded coffee cart with La Marzocco espresso machine at a corporate venue"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
             />
@@ -298,7 +298,7 @@ function CorporateEvents() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-espresso-pull.jpg"
-              alt="Espresso being pulled into a Taïga branded cup"
+              alt="Espresso being pulled into a Taiga branded cup"
               className="rounded-2xl w-full object-cover sm:mt-10"
               style={{ aspectRatio: "3/4", objectPosition: "center", maxHeight: "400px" }}
             />
@@ -307,7 +307,7 @@ function CorporateEvents() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-barista-cart.jpg"
-              alt="Taïga barista preparing drinks at the coffee cart"
+              alt="Taiga barista preparing drinks at the coffee cart"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "3/4", objectPosition: "center top", maxHeight: "400px" }}
             />
@@ -317,7 +317,7 @@ function CorporateEvents() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-service-moment.jpg"
-              alt="Barista handing a Taïga cup to a guest at a corporate event"
+              alt="Barista handing a Taiga cup to a guest at a corporate event"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "4/3", objectPosition: "center", maxHeight: "340px" }}
             />
@@ -326,7 +326,7 @@ function CorporateEvents() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/photo-cart-wide.jpg"
-              alt="Full Taïga coffee cart setup with barista and guest at a corporate venue"
+              alt="Full Taiga coffee cart setup with barista and guest at a corporate venue"
               className="rounded-2xl w-full object-cover"
               style={{ aspectRatio: "4/3", objectPosition: "center", maxHeight: "340px" }}
             />
@@ -336,7 +336,7 @@ function CorporateEvents() {
         <ScrollReveal delay={80}>
           <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <p className="text-[#5C2D0E]/60 text-base leading-7 font-light max-w-lg">
-              Our mobile espresso cart arrives fully equipped — specialty-grade beans, a trained barista, and our signature La Marzocco machine. No venue sourcing, no coffee hassle, just an elevated experience for your team or guests.
+              Our mobile espresso cart arrives fully equipped with specialty-grade beans, a trained barista, and our signature La Marzocco machine. No venue sourcing, no coffee hassle, just an elevated experience for your team or guests.
             </p>
             <a
               href="#quote"
@@ -367,13 +367,13 @@ function AboutTeaser() {
                 Our Roots
               </p>
               <h2 className="text-[#2B1608] text-4xl sm:text-5xl leading-tight mb-6">
-                Sourced from<br />Costa Rica&apos;s<br />highlands.
+                Imported directly<br />from Costa Rica&apos;s<br />coffee farms.
               </h2>
               <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-5">
-                Our beans come directly from a family-owned finca in Costa Rica&apos;s renowned coffee-growing region — traceable, ethical, and extraordinary. What begins as a relationship between family and farmers becomes the coffee your guests remember.
+                We import our coffee directly from coffee farms owned by friends and family back home in Costa Rica. What begins as a relationship between family and farmers becomes the coffee your guests remember.
               </p>
               <p className="text-[#5C2D0E]/65 text-base leading-7 font-light mb-10">
-                Taïga Pura Vida Coffee brings the warmth of Costa Rican pura vida and the precision of specialty craft to Charlottesville, VA and beyond.
+                Taiga Pura Vida Coffee brings the warmth of Costa Rican pura vida and the precision of specialty craft to Charlottesville, VA and beyond.
               </p>
               <a
                 href="#quote"
@@ -390,7 +390,7 @@ function AboutTeaser() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img-lifestyle-mountains.jpg"
-                alt="Taïga iced drink held up against the Blue Ridge mountains"
+                alt="Taiga iced drink held up against the Blue Ridge mountains"
                 className="rounded-2xl w-full object-cover object-top"
                 style={{ aspectRatio: "1/1", maxHeight: "480px" }}
               />
@@ -398,7 +398,7 @@ function AboutTeaser() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img-kids-cups.jpg"
-                alt="Community enjoying Taïga coffee"
+                alt="Community enjoying Taiga coffee"
                 className="absolute -bottom-6 -left-4 sm:-left-8 w-2/5 rounded-xl object-cover border-4 border-white shadow-lg"
                 style={{ aspectRatio: "1" }}
               />
@@ -472,7 +472,7 @@ function SiteFooter() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo-horizontal.png"
-              alt="Taïga Pura Vida Coffee"
+              alt="Taiga Pura Vida Coffee"
               className="h-7 object-contain brightness-0 invert opacity-70 mb-3"
               style={{ width: "auto" }}
             />
@@ -499,7 +499,7 @@ function SiteFooter() {
 
         <div className="border-t border-[#EDD9B8]/10 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
           <p className="text-[#EDD9B8]/20 text-xs">
-            © 2026 Taïga Pura Vida Coffee · Charlottesville, VA
+            © 2026 Taiga Pura Vida Coffee · Charlottesville, VA
           </p>
           {/* TODO: update email once Zoho is set up */}
           <a

@@ -9,12 +9,12 @@ import FAQAccordion from "../components/FAQAccordion";
 export const metadata: Metadata = {
   title: "Get a Quote",
   description:
-    "Request a custom quote for your wedding, corporate event, or celebration. Taïga Pura Vida Coffee brings specialty espresso catering to Charlottesville, VA and beyond.",
+    "Request a custom quote for your wedding, corporate event, or celebration. Taiga Pura Vida Coffee brings specialty espresso catering to Charlottesville, VA and beyond.",
   openGraph: {
-    title: "Get a Quote | Taïga Pura Vida Coffee",
+    title: "Get a Quote | Taiga Pura Vida Coffee",
     description:
       "Tell us about your event and we'll get back within 24 hours with a custom coffee catering quote.",
-    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taïga Pura Vida Coffee" }],
+    images: [{ url: "/logo-square-brown.png", width: 1080, height: 1080, alt: "Taiga Pura Vida Coffee" }],
   },
 };
 
