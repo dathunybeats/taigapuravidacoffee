@@ -104,14 +104,14 @@ const services = [
   },
   {
     number: "03",
-    icon: "/icon-cold-brew.svg",
+    icon: "/icon-cold-brew.png",
     title: "Cold Brew",
     body: "Slow-steeped in-house with our Costa Rican single-origin beans and served straight and dark, no cream, no foam. Bottled and available by email order, alongside our iced lattes and whole bean coffee bags.",
     details: ["Single-origin Costa Rican beans", "Served straight and dark", "Bottled cold brew and iced lattes", "Order by email"],
   },
   {
     number: "04",
-    icon: "/icon-drip-coffee.svg",
+    icon: "/icon-drip-coffee.png",
     title: "Drip Coffee",
     body: "Cafe chorreado, Costa Rican drip coffee. Fully black, no foam, brewed from the beans we import directly from the farms.",
     details: ["Cafe chorreado, Costa Rican style", "Fully black, no foam", "Specialty-grade drip coffee", "Brewed from directly imported beans"],
